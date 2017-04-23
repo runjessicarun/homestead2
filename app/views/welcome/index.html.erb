@@ -1,1 +1,75 @@
-<h1> Hello World! </h1>
+  <div class="job-header">
+    <%= video_tag "Show.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video-background" %>
+    <div class="row box">
+      <div class="box-inner">
+        <h1 class="title">欢迎来到家园II号</h1>
+        <p class="slogan">
+          最适合人类居住的移民星球
+          <br>
+          通过技术移民，可节省至少100万美元
+          <br>
+        </p>
+        <p class="lead">
+          <%= link_to 'Join', jobs_path, class: 'btn btn-danger' %>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-section-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-sm-6">
+          <hr class="section-heading-spacer">
+          <div class="clearfix"></div>
+          <h2 class="section-heading">通过星舰前往</h2>
+          <p class="lead">星舰“阿瓦隆号”（Avalon）搭载移民者者前往
+            <br>
+            这趟旅程需花费120年时间
+            <br>
+            船票100万美元起。
+          </p>
+        </div>
+        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+          <%= image_tag 'pic-1.jpg', class: 'img-responsive' %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-section-b">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+          <hr class="section-heading-spacer">
+          <div class="clearfix"></div>
+          <h2 class="section-heading">适合人类居住的处女地</h2>
+          <p class="lead">家园II号纯净无污染
+            <br>
+            环境适合人类居住
+            <br>
+            无大型肉食动物
+           </p>
+        </div>
+        <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+          <%= image_tag 'pic-2.jpg', class: 'img-responsive' %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-section-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-sm-6">
+          <hr class="section-heading-spacer">
+          <div class="clearfix"></div>
+          <h2 class="section-heading">通过技术移民可免费搭乘星舰前往</h2>
+          <p class="lead">技术移民免船票，落地家园II号后可直接上岗</p>
+        </div>
+        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+          <%= image_tag 'pic-3.jpg', class: 'img-responsive' %>
+        </div>
+      </div>
+    </div>
+  </div>
