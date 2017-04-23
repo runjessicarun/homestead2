@@ -1,3 +1,9 @@
+<div class="pull-right">
+  <% if current_user.admin? %>
+  <%= link_to("Add a job", new_job_path, :class => "btn btn-default" ) %>
+  <% end %>
+</div>
+
 <div class="dropdown clearfix pull-right">
     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       排序
