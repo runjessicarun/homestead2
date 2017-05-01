@@ -18,66 +18,100 @@
  @import "bootstrap";
  @import "font-awesome";
 
- html { height: 100%;}
-  body { min-height: 100%; display: flex; flex-direction: column;}
+ /* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+html { height: 100%;}
+  body { min-height: 100%; display: flex; flex-direction: column;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #ccc;
+}
   .content { flex: 1;}
 
- //---------Navbar---------
+body {
+  padding-bottom: 40px;
+  color: #777;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+.navbar {
+    margin-bottom: 0 !important;
+}
 
 .navbar-default {
-    background-color: #212121;
-    border-color: #212121;
-    margin-bottom: 0;
-    border-radius: 0;
+  position:relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+}
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
 }
 
-.navbar-default .navbar-brand {
-    color: #757575;
-    padding: 10px 15px;
-    line-height: 30px;
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
 }
 
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: #FF6F00;
-    background-color: transparent;
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-.navbar-default .navbar-nav > li > a {
-    color: #757575;
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #FF6F00;
-    background-color: transparent;
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
 }
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #FF6F00;
-    background-color: #FFE0B2;
+.panel {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 3px 3px #777777;
 }
-
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:focus,
-.navbar-default .navbar-nav > .open > a:hover {
-    background-color: #FFE0B2;
-    color: #212121;
-}
-.video-background {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-}
- //--------tanchuang-------
- @import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 
 /****** LOGIN MODAL ******/
 .loginmodal-container {
@@ -173,85 +207,3 @@
 .login-help{
   font-size: 12px;
 }
- //---------Box---------
-
-  .box {
-      //background-image: url("header.jpg");
-      //background-repeat: no-repeat;
-      //background-size: cover;
-      //margin-bottom: 50px;
-      //margin-left: -50px;
-      //margin-right: -50px;
-
-      .box-inner {
-          background-color: rgba(250, 250, 250, 0);
-          padding-top: 70px;
-          padding-bottom: 70px;
-
-      }
-
-
-      .title {
-          text-align: center;
-          color: #FAFAFA;
-          margin-bottom: 80px;
-      }
-
-      .slogan {
-          color: #FAFAFA;
-          margin-top: 10px;
-          margin-bottom: 50px;
-          text-align: center;
-          font-size: 25px;
-          top: 12px;
-      }
-
-      .lead {
-          margin-bottom: 60px;
-          text-align: center;
-          color: white;
-      }
-  }
-
-    //---------Content---------
-
-    .content-section-a {
-        padding: 50px 0;
-        margin: 0 -15px;
-        background-color: #f8f8f8;
-    }
-
-    .content-section-b {
-        padding: 50px 0;
-        margin: 0 -15px;
-        background-color: #f8f8f8;
-        border-top: 1px solid #e7e7e7;
-        border-bottom: 1px solid #e7e7e7;
-    }
-
-    .section-heading-spacer {
-        float: left;
-        width: 200px;
-        margin: 0 -15px;
-        border-top: 3px solid #e7e7e7;
-    }
-
-    .section-heading {
-        margin-bottom: 30px;
-    }
-
-    .lead {
-        font-size: 18px;
-        font-weight: 400;
-    }
-
-      //---------Footer---------
-
-      footer {
-          color: white;
-      }
-
-      footer .footer-below {
-          padding: 25px 0;
-          background-color: #233140;
-      }
